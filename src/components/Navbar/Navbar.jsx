@@ -14,7 +14,7 @@ const Navbar = () => {
                 <li className='cursor-pointer font-semibold text-lg hover:text-blue-500'>About us</li>
                 <li className='cursor-pointer font-semibold text-lg hover:text-blue-500'>Campus</li>
                 <li className='cursor-pointer font-semibold text-lg hover:text-blue-500'>Testimonials</li>
-                <li className='cursor-pointer'><Button text="click me" /></li>
+                <li className='cursor-pointer'><Button text="Contact us" /></li>
 
             </ul>
         </div>

@@ -15,7 +15,7 @@ const Campus = () => {
             <img src={g_4} alt="" className='w-[23%] rounded-xl'/>
         </div>
         <div className='flex justify-center items-center'>
-            <Button text="See more here" icon={white_arrow} customCss="bg-blue-600 text-white hover:border hover:border-blue-600"/>
+            <Button text="See more here" icon={white_arrow} customCss="bg-emerald-500 text-white hover:border hover:border-blue-600"/>
         </div>
     </div>
   )
