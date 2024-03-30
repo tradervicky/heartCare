@@ -1,12 +1,12 @@
 import React from 'react'
 import doctor_3 from '../../assets/doctor_3.jpg'
 import play from '../../assets/play-icon.png'
-const About = () => {
+const About = ({setPlayState}) => {
   return (
     <div className='my-24 px-36 flex justify-between items-center big-tablet:flex-col-reverse big-tablet:gap-6 big-tablet:px-6'>
         <div className="basis-[40%] relative big-tablet:basis-[100%]">
             <img src={doctor_3} alt="doctor"  className='w-full rounded-xl'/>
-            <img src={play} alt="doctor" className='absolute top-[40%] left-[45%] w-16 cursor-pointer'/>
+            <img src={play} alt="doctor" className='absolute top-[40%] left-[45%] w-16 cursor-pointer' onClick={()=>setPlayState(true)}/>
         </div>
         <div className="basis-[56%] big-tablet:basis-[100%]">
             <h3 className='text-xl font-bold text-blue-800 '>About University</h3>

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { CustomScroll } from "react-custom-scroll";
 import About from './components/about/About';
 import Campus from './components/campus/Campus';
@@ -8,9 +9,10 @@ import Navbar from './components/Navbar/Navbar';
 import Programs from './components/programs/Programs';
 import Testimonial from './components/testimonial/Testimonial';
 import Title from './components/Title/Title';
+import VideoPlayer from "./components/videoPlayer/VideoPlayer";
 
 const App = () => {
-  
+  const [playState, setPlayState] = useState(false)
 
   return (
     <CustomScroll>
@@ -25,7 +27,7 @@ const App = () => {
       </div>
       <div id="section3">
 
-        <About /></div>
+        <About setPlayState={setPlayState}/></div>
         <div id="section4">
         <Title title="Gallery" subtitle="Campus Photos" />
         <Campus /></div>
@@ -37,7 +39,7 @@ const App = () => {
         <Contact /></div>
         
         <Footer />
-      
+        <VideoPlayer playState={playState} setPlayState={setPlayState}/>
     </CustomScroll>
   );
 }
