@@ -8,8 +8,8 @@ import cardio from "../../assets/brain.svg";
 
 const Programs = () => {
   return (
-    <div className="px-36 pt-20 pb-20 flex justify-between">
-      <div className="w-1/4 h-80 relative group">
+    <div className="px-36 pt-20 pb-20 flex justify-between gap-6 big-tablet:flex-col big-tablet:px-4">
+      <div className="w-1/3 h-80 relative group big-tablet:w-[100%]">
         <img
           src={program_1}
           alt="Program_2"
@@ -26,7 +26,7 @@ const Programs = () => {
           </span>
         </div>
       </div>
-      <div className="w-1/4 h-80 relative group">
+      <div className="w-1/3 h-80 relative group big-tablet:w-[100%]">
         <img
           src={program_2}
           alt="Program_2"
@@ -43,7 +43,7 @@ const Programs = () => {
           </span>
         </div>
       </div>
-      <div className="w-1/4 h-80 relative group">
+      <div className="w-1/3 h-80 relative group big-tablet:w-[100%]">
         <img
           src={program_3}
           alt="Program_2"

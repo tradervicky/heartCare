@@ -33,9 +33,9 @@ const Contact = () => {
     }
   };
   return (
-    <div className='flex mx-[150px] my-24'>
+    <div className='flex mx-[150px] my-24 big-tablet:mx-10 mobile:flex-col'>
       
-        <div className="contact-col basis-[48%] text-gray-500">
+        <div className="contact-col basis-[48%] pr-2 text-gray-500">
             <h3 className='text-2xl font-semibold text-blue-800 flex items-centermb-5'>Send us a  <img src={msg_icon} alt="msg_icon"  className='w-9 ml-3'/> </h3>
             <p className='max-w-[450px] mt-4  ml-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illo veritatis possimus velit ratione temporibus accusamus iure reiciendis dolore odit!</p>
             <ul>
@@ -44,7 +44,7 @@ const Contact = () => {
                 <li className='flex items-center my-5'><img className='w-6 mr-3' src={location_icon} alt="" />69 Mathiya Gaon <br /> Nala Sopara Mumbai, India</li>
             </ul>
         </div>
-        <div className="basis-[48%]">
+        <div className="basis-[48%] mr-0">
             <form onSubmit={onSubmit} className="flex flex-col">
                 <label htmlFor="" className='text-lg font-semibold text-blue-950'>
                     Your name
@@ -57,7 +57,7 @@ const Contact = () => {
                 <label htmlFor="" className='text-lg font-semibold text-blue-950'>Write your message here</label>
                 <textarea name="message" rows="6" placeholder='Enter your message' required className='px-4 py-2 bg-slate-100 rounded-lg mb-4 mt-2'></textarea>
                 <div>
-                <button type='submit' className='bg-blue-950 text-white text-lg font-semibold px-4 py-2 rounded-3xl flex items-center justify-center hover:bg-blue-500'>Submit now <img src={whiteArrow} alt="" className='w-5 ml-4' /></button>
+                <button type='submit' className='bg-blue-950 text-white text-lg font-semibold px-4 py-2 rounded-3xl flex items-center justify-center hover:bg-blue-500 duration-300 ease-in-out big-tablet:py-1 big-tablet:px-2 big-tablet:text-lg big-tablet:font-normal'>Submit now <img src={whiteArrow} alt="" className='w-5 ml-4' /></button>
                 </div>
             </form>
             <span>{result}</span>
