@@ -37,9 +37,9 @@ const Contact = () => {
       
         <div className="contact-col basis-[48%] pr-2 text-gray-500">
             <h3 className='text-2xl font-semibold text-blue-800 flex items-centermb-5'>Send us a  <img src={msg_icon} alt="msg_icon"  className='w-9 ml-3'/> </h3>
-            <p className='max-w-[450px] mt-4  ml-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illo veritatis possimus velit ratione temporibus accusamus iure reiciendis dolore odit!</p>
+            <p className='max-w-[450px] mt-4  ml-3'>Take charge of your health journey - message us now to discover how we can support you every step of the way!</p>
             <ul>
-                <li className='flex items-center my-5'> <img className='w-6 mr-3' src={mail_icon} alt="" /> contact@edusity.in</li>
+                <li className='flex items-center my-5'> <img className='w-6 mr-3' src={mail_icon} alt="" /> contact@heartcare.in</li>
                 <li className='flex items-center my-5'><img className='w-6 mr-3' src={phone_icon} alt="" />+91- 75987852</li>
                 <li className='flex items-center my-5'><img className='w-6 mr-3' src={location_icon} alt="" />69 Mathiya Gaon <br /> Nala Sopara Mumbai, India</li>
             </ul>
